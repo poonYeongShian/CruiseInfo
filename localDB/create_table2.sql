@@ -34,44 +34,51 @@ CREATE TABLE country(
 );
 
 CREATE TABLE operator(
-	oper_id NUMERIC(4) IDENTITY NOT NULL,
+	oper_id uniqueidentifier  NOT NULL
+		DEFAULT newid(),
+
 	oper_comp_name VARCHAR(50) NOT NULL,
 	oper_ceo VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE ship(
-	ship_code NUMERIC(4) NOT NULL,
+	ship_code uniqueidentifier NOT NULL
+		DEFAULT newid(),
+
 	ship_name VARCHAR(50) NOT NULL,
 	ship_date_commiss DATE NOT NULL,
 	ship_tonnage NUMERIC(6) NOT NULL,
 	ship_guest_capacity NUMERIC(4) NOT NULL,
 	country_code CHAR(2) NOT NULL,
-	oper_id NUMERIC(4) NOT NULL,
+	oper_id uniqueidentifier NOT NULL,
 )
 
 CREATE TABLE cruise(
-	cruise_id NUMERIC(6) NOT NULL,
+	cruise_id uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	cruise_name VARCHAR(80) NOT NULL,
 	cruise_description VARCHAR(200) NOT NULL,
-	ship_code NUMERIC(4) NOT NULL
+	ship_code uniqueidentifier NOT NULL
 )
 
 CREATE TABLE cabin(
-	ship_code NUMERIC(4) NOT NULL,
-	cabin_no NUMERIC(5) NOT NULL,
+	ship_code uniqueidentifier NOT NULL,
+	cabin_no uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	cabin_capacity NUMERIC(1) NOT NULL,
 	cabin_class CHAR(1) NOT NULL
 )
 
 CREATE TABLE cruise_port(
-	cruise_id NUMERIC(6) NOT NULL,
+	cruise_id uniqueidentifier NOT NULL,
 	cp_datetime DATE NOT NULL,
 	cp_depart_arrive CHAR(1) NOT NULL,
-	port_code CHAR(5) NOT NULL
+	port_code uniqueidentifier NOT NULL
 )
 
 CREATE TABLE port(
-	port_code CHAR(5) NOT NULL,
+	port_code uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	port_name VARCHAR(50) NOT NULL,
 	port_population NUMERIC(6) NOT NULL,
 	port_long NUMERIC(10, 7) NOT NULL,
@@ -80,22 +87,23 @@ CREATE TABLE port(
 )
 
 CREATE TABLE port_temp(
-	port_code CHAR(5) NOT NULL,
+	port_code uniqueidentifier NOT NULL,
 	temp_month DATE NOT NULL,
 	temp_high NUMERIC(4, 1),
 	temp_low NUMERIC(3, 1)
 )
 
 CREATE TABLE manifest(
-	passenger_id NUMERIC(6) NOT NULL,
-	cruise_id NUMERIC(6) NOT NULL,
+	passenger_id uniqueidentifier NOT NULL,
+	cruise_id uniqueidentifier NOT NULL,
 	mainfest_board_time DATE,
-	cabin_no NUMERIC(5) NOT NULL,
-	ship_code NUMERIC(4) NOT NULL,
+	cabin_no uniqueidentifier NOT NULL,
+	ship_code uniqueidentifier NOT NULL,
 )
 
 CREATE TABLE address(
-	address_id NUMERIC(6) NOT NULL,
+	address_id uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	address_street VARCHAR(50) NOT NULL,
 	address_town VARCHAR(30) NOT NULL,
 	address_pcode VARCHAR(10) NOT NULL,
@@ -103,38 +111,41 @@ CREATE TABLE address(
 )
 
 CREATE TABLE passenger(
-	passenger_id NUMERIC(6) NOT NULL,
+	passenger_id uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	passenger_fname VARCHAR(30),
 	passenger_lname VARCHAR(30),
 	passenger_dob DATE NOT NULL,
 	passenger_gender CHAR(1) NOT NULL,
 	passenger_contact CHAR (10),
-	address_id NUMERIC(6) NOT NULL,
-	guardian_id NUMERIC(6),
+	address_id uniqueidentifier NOT NULL,
+	guardian_id uniqueidentifier,
 	lang_code CHAR (2) NOT NULL
 )
 
 CREATE TABLE participant(
-	participant_id NUMERIC(7) NOT NULL,
+	participant_id uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	tour_paid CHAR (1) NOT NULL,
-	cruise_id NUMERIC(6) NOT NULL,
-	passenger_id NUMERIC(6) NOT NULL,
+	cruise_id uniqueidentifier NOT NULL,
+	passenger_id uniqueidentifier NOT NULL,
 	touroffer_date DATE NOT NULL,
-	tour_id NUMERIC(6) NOT NULL
+	tour_id uniqueidentifier NOT NULL
 )
 
 CREATE TABLE tour_lang(
 	lang_code CHAR (2) NOT NULL,
-	tour_id NUMERIC(6) NOT NULL
+	tour_id uniqueidentifier NOT NULL
 )
 
 CREATE TABLE touroffer(
 	touroffer_date DATE NOT NULL,
-	tour_id NUMERIC(6) NOT NULL
+	tour_id uniqueidentifier NOT NULL
 )
 
 CREATE TABLE tour(
-	tour_id NUMERIC(6) NOT NULL,
+	tour_id uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	tour_number NUMERIC(3) NOT NULL,
 	tour_name VARCHAR(80) NOT NULL,
 	tour_description VARCHAR(200) NOT NULL,
@@ -143,18 +154,19 @@ CREATE TABLE tour(
 	tour_wchair_access CHAR (1) NOT NULL,
 	tour_starttime DATE NOT NULL,
 	tour_min_participants NUMERIC(3) NOT NULL,
-	tour_when_code NUMERIC(2) NOT NULL,
-	port_code CHAR (5) NOT NULL
+	tour_when_code uniqueidentifier NOT NULL,
+	port_code uniqueidentifier NOT NULL
 )
 
 CREATE TABLE tour_when(
-	tour_when_code NUMERIC(2) NOT NULL,
+	tour_when_code uniqueidentifier NOT NULL
+		DEFAULT newid(),
 	tour_when_desc VARCHAR(20) NOT NULL
 )
 
 CREATE TABLE tour_language(
 	lang_code CHAR (2) NOT NULL,
-	tour_id NUMERIC(6) NOT NULL
+	tour_id uniqueidentifier NOT NULL
 )
 
 -- Primary keys
