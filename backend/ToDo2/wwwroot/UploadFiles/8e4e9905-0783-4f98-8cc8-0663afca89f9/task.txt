@@ -1,0 +1,108 @@
+everyday task
+>improve interview script
+>read interview script
+>backup monash stuff
+>apply 5 jobs
+>javascript & leetcode
+
+-----------------------------
+         PROGRESS
+-----------------------------
+17/12/2023(Sun)
+>Applied 5 jobs
+
+18/12/2023(Mon)
+>Applied 1 job
+>Complete javascript 2hrs basic video                                                      <<understand promise and AJAX>>
+
+19/12/2023(Tue)
+>Applied 4 job
+>video: 02 尚硅谷 JavaScript高级 数据类型
+>video: Ajax 是什么? 如何创建一个 Ajax？ - JavaScript前端Web工程师 (use XMLHTTPRequest())     <<AJAX with XMLHTTPRequest>>
+>video: AJAX 網路連線實務 - Front End 網頁前端工程教學 (use fetch())                          <<AJAX with fetch>>
+
+
+20/12/2023(Wed)
+>video: 歷久不衰 jQuery 實戰教學 (half not finish yet)                                       <<show “control element”, “animation css” and “JQuery AJAX”>>
+
+21/12/2023(Thur)
+>video: 歷久不衰 jQuery 實戰教學 (finished)                                                  <<show “control element”, “animation css” and “JQuery AJAX”>>
+>video: 2021最新版axios入门与源码解析 (continue)                                              <<axios>>
+
+25/12/2023(Mon)
+>Backup fit3080
+>video: 2021最新版axios入门与源码解析 (continue)                                              <<axios, custom axios instance, JSON Server, send delay, focus on GET, POST, PUT, DELETE And also cancel token>>
+
+26/12/2023(Tue)
+>video: 2021最新版axios入门与源码解析 (finished)                                              <<axios, custom axios instance, JSON Server, send delay, focus on GET, POST, PUT, DELETE And also cancel token>>
+>video: 前端面试宝典之 React 篇 (continue)
+
+27/12/2023(Wed)
+>video: 前端面试宝典之 React 篇 (continue)
+
+28/12/2023(Thur)
+>video: 前端面试宝典之 React 篇 (finish)
+>update resume
+>applied 6 jobs
+
+29/12/2023(Fri)
+>video: C#快速入门教程(完整版)  till video 20 (continue)
+
+30/12/2023(Sat)
+>video: C#快速入门教程(完整版)  till video 20 (finished)
+>practising C# medium level arithmetic and array questions
+
+31/12/2023(Sun)
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/1/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/2/2024
+>write interview offer rejection script
+>practising C# medium level class and inheritance
+>applied 3 jobs
+
+1/3/2024
+>practising C#
+>make a mandarin version of intro script
+
+1/4/2024
+>round one interview with Obestsolution
+
+1/5/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+>apply 1 job
+
+1/6/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/7/2024
+>apply jobs
+>Reconfirm goal: watch all .Net video, then do golang
+
+1/8/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/9/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/10/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/11/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/12/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/13/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+1/14/2024
+>video: ASP.NET Core Web API 入門教學 (continue)
+
+
+
+
+

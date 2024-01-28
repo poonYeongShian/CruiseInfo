@@ -1,0 +1,100 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\18a26403-ca36-45cc-851a-5ed984d72877\Capture999.JPG))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToDo2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToDo2</BasePath>
+      <RelativePath>UploadFiles\18a26403-ca36-45cc-851a-5ed984d72877\Capture999.JPG</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\18a26403-ca36-45cc-851a-5ed984d72877\Capture999.JPG))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\18a26403-ca36-45cc-851a-5ed984d72877\PoonYeongShian_resume_v6.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToDo2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToDo2</BasePath>
+      <RelativePath>UploadFiles\18a26403-ca36-45cc-851a-5ed984d72877\PoonYeongShian_resume_v6.pdf</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\18a26403-ca36-45cc-851a-5ed984d72877\PoonYeongShian_resume_v6.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\8e4e9905-0783-4f98-8cc8-0663afca89f9\common_cmd_line_setup.txt))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToDo2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToDo2</BasePath>
+      <RelativePath>UploadFiles\8e4e9905-0783-4f98-8cc8-0663afca89f9\common_cmd_line_setup.txt</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\8e4e9905-0783-4f98-8cc8-0663afca89f9\common_cmd_line_setup.txt))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\8e4e9905-0783-4f98-8cc8-0663afca89f9\task.txt))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToDo2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToDo2</BasePath>
+      <RelativePath>UploadFiles\8e4e9905-0783-4f98-8cc8-0663afca89f9\task.txt</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\8e4e9905-0783-4f98-8cc8-0663afca89f9\task.txt))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\b032bed2-4d58-436a-a938-0b3c87cee925\AWS Certified Cloud Practitioner certificate (1).pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToDo2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToDo2</BasePath>
+      <RelativePath>UploadFiles\b032bed2-4d58-436a-a938-0b3c87cee925\AWS Certified Cloud Practitioner certificate (1).pdf</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\b032bed2-4d58-436a-a938-0b3c87cee925\AWS Certified Cloud Practitioner certificate (1).pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\b032bed2-4d58-436a-a938-0b3c87cee925\CHONG YI QIAN_202308231621_rotated.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToDo2</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToDo2</BasePath>
+      <RelativePath>UploadFiles\b032bed2-4d58-436a-a938-0b3c87cee925\CHONG YI QIAN_202308231621_rotated.pdf</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadFiles\b032bed2-4d58-436a-a938-0b3c87cee925\CHONG YI QIAN_202308231621_rotated.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>
