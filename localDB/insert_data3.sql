@@ -709,14 +709,119 @@ INSERT INTO tour (
 (111, 'Coastal Kayaking Expedition', 'Paddle along the picturesque coastline on a kayaking adventure', 3.0, 6500.00, 'Y', '08:00:00', 4, '4CE8358F-8379-40AB-B0E0-06011778BF09', '9A99BD17-CB17-446D-8FE3-A53C6DF282E6'),
 (112, 'Art and Architecture Tour', 'Discover the artistic and architectural wonders of the city', 3.0, 7000.00, 'N', '16:00:00', 8, 'EDBB7D3C-3655-4A9B-AAA0-06426AA53493', 'ECA2C79B-696A-4EF0-B783-600222B1D0AF');
 
+--tourlanguage
+INSERT INTO [tour_lang] (
+    lang_code,
+    tour_id 
+) VALUES 
+    ('en', '00DC0895-062B-457A-B908-27327C700BB5'),
+    ('es', '963E1469-CEDE-47FD-B7EA-3D631748D7FC'),
+    ('jp', '527D4E25-A5A3-46A9-BBF0-57982091E599'),
+    ('ko', '86F189FB-37FF-4BC7-8E89-7E2918ED9E8C'),
+    ('zh', 'EBC6065E-076C-406A-9629-A12F3E50CFF5'),
+    ('en', '7F509740-5F71-4C34-801F-AB9FE0F7E543'),
+    ('es', '8EBA2741-4EAA-42B2-8106-CF5D3FB9BEB8'),
+    ('jp', '58DB20C1-72C2-41FC-87CD-D31ACF9E754F'),
+    ('ko', '39DDCCEC-8821-41DA-8397-E04B48882770'),
+    ('zh', '1633B154-BFBC-4627-A452-F2D8EBB3FA94');
+--cruise
+
+INSERT INTO cruise(
+    cruise_name,
+    cruise_description,
+    ship_code
+) VALUES (
+    'Tropical Paradise Cruise',
+    'Experience the ultimate relaxation in our tropical paradise cruise, where you can unwind amidst stunning ocean views and indulge in luxurious amenities.',
+    '83FC1748-DCE4-44D1-A978-01534C145B71'
+), (
+    'Adventure Explorer Cruise',
+    'Embark on an adventurous journey filled with excitement and exploration on our explorer cruise, where youll discover hidden treasures and breathtaking landscapes.',
+    'B964BFD9-4921-4277-8E98-0C1023C46692'
+), (
+    'Majestic Seas Cruise',
+    'Sail through the majestic seas and immerse yourself in the beauty of nature while enjoying world-class entertainment and exceptional service.',
+    '6B4C3D20-52B0-4428-AB8D-0EA1B349BFE1'
+), (
+    'Serenity Escape Cruise',
+    'Escape to serenity on our tranquil cruise, where you can rejuvenate your mind, body, and soul amidst serene ocean waves and breathtaking sunsets.',
+    '0E24F286-6ED6-437B-9DA8-102BAB22D83C'
+), (
+    'Luxury Oasis Cruise',
+    'Indulge in pure luxury and opulence on our oasis cruise, where every moment is tailored to exceed your expectations and fulfill your every desire.',
+    '814AFB02-B802-4322-B072-1DCEF805AF44'
+), (
+    'Royal Elegance Cruise',
+    'Experience the epitome of royal elegance and sophistication on our exclusive cruise, where every detail is meticulously crafted to perfection.',
+    '38BBB325-7E59-4ECA-9F90-1DEB89299DAD'
+), (
+    'Enchanted Voyage Cruise',
+    'Embark on an enchanted voyage filled with wonder and magic, where dreams come true and memories are made to last a lifetime.',
+    '44628EAE-92B2-4B6D-9365-2AAD4AACEF77'
+), (
+    'Sunset Bliss Cruise',
+    'Savor the magic of sunset on our blissful cruise, where every moment is bathed in golden hues and accompanied by gentle ocean breezes.',
+    'F8C70D02-7905-4FA9-A1D8-31729FA07F70'
+), (
+    'Island Paradise Cruise',
+    'Discover the allure of island paradise on our exotic cruise, where pristine beaches, azure waters, and lush landscapes await your exploration.',
+    '5BFF44F5-94EB-45F5-912E-37C333820E62'
+), (
+    'Mystic Odyssey Cruise',
+    'Embark on a mystical odyssey to distant lands and ancient wonders, where each port of call unveils a new chapter of intrigue and adventure.',
+    'B0FDA9E3-223F-4C9E-8AA5-4692BA585743'
+), (
+    'Celestial Harmony Cruise',
+    'Experience celestial harmony on our transcendent cruise, where the beauty of the cosmos meets the serenity of the open sea, creating an unforgettable journey.',
+    'C01D1F38-71AF-4EE9-808E-67100F545ABE'
+), (
+    'Gourmet Delight Cruise',
+    'Satisfy your culinary desires on our gourmet delight cruise, where world-class chefs tantalize your taste buds with exquisite flavors from around the globe.',
+    'C2344D67-FD0B-4F53-AB09-768952CA7FC6'
+), (
+    'Exotic Adventure Cruise',
+    'Embark on an exotic adventure to remote corners of the world, where untamed wilderness and thrilling experiences await your discovery.',
+    '94265C2E-B0CA-4FF0-91CA-92061B71C965'
+), (
+    'Grand Splendor Cruise',
+    'Step into grand splendor and elegance on our luxurious cruise, where every detail exudes sophistication and every moment is a celebration of opulence.',
+    '780AD71A-F2C9-4EE5-9B39-B868D8DA88AB'
+), (
+    'Oceanic Escape Cruise',
+    'Escape to the open sea on our oceanic cruise, where endless horizons and boundless possibilities create the perfect backdrop for your unforgettable journey.',
+    '68E2143B-4F75-410E-B62A-BB9B99F10714'
+), (
+    'Cultural Odyssey Cruise',
+    'Embark on a cultural odyssey to vibrant destinations steeped in history, where ancient traditions and modern marvels converge to create a rich tapestry of experiences.',
+    '1D9AC610-1671-421D-A863-BEE97040968E'
+), (
+    'Golden Horizon Cruise',
+    'Set sail towards the golden horizon on our spectacular cruise, where each day brings new adventures and each night is filled with starlit romance.',
+    'EEADC8D2-EC72-4187-B90C-C758D93D3B72'
+), (
+    'Sapphire Seas Cruise',
+    'Explore the beauty of sapphire seas on our enchanting cruise, where crystal-clear waters and pristine coastlines beckon you to embark on a voyage of discovery.',
+    '958F8F6B-3674-4AE4-BB15-D47C45A64CA2'
+), (
+    'Voyage of Discovery Cruise',
+    'Embark on a voyage of discovery to uncharted territories and hidden gems, where every day holds the promise of new experiences and unforgettable moments.',
+    '8B3DD377-1980-47A2-BE04-E84E36BC9621'
+), (
+    'Eternal Sunshine Cruise',
+    'Bask in eternal sunshine on our radiant cruise, where azure skies and shimmering waters create the perfect backdrop for your blissful escape.',
+    '6C0F770A-928D-47E4-84B1-EB5F02C0A482'
+);
+
+
 --manifest
 
 --participant
 
 --cruise_port
 
---cruise
+
 
 --touroffer
 
---tourlanguage
+
+
