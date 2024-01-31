@@ -1,0 +1,6 @@
+@CruiseWorld_HostAddress = http://localhost:5296
+
+GET {{CruiseWorld_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
