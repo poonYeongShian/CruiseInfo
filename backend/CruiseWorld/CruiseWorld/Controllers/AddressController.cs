@@ -18,12 +18,42 @@ namespace CruiseWorld.Controllers
             _cruiseContext = cruiseContext;
         }
 
-        // GET: api/<AddressController>
+
+        /// <summary>
+        /// Attempt 1: Simple Linq to get all data
+        /// GET: api/Address
+        /// Get all address data
+        /// </summary>
+        //[HttpGet]
+        //public IEnumerable<AddressDto> Get()
+        //{
+        //    var result = _cruiseContext.Addresses.Include(a=>a.CountryCodeNavigation)
+        //        .Select(a=>new AddressDto
+        //        {
+        //            AddressId = a.AddressId,
+        //            AddressStreet = a.AddressStreet,
+        //            AddressTown = a.AddressTown,
+        //            AddressPcode = a.AddressPcode,
+        //            CountryName = a.CountryCodeNavigation.CountryName
+        //        });
+
+        //    return result;
+        //}
+
+        /// <summary>
+        /// Attempt 2: Simple Linq to get all data
+        ///            add pagination
+        /// GET: api/Address
+        /// Get all address data
+        /// </summary>
         [HttpGet]
-        public IEnumerable<AddressDto> Get()
+        public IEnumerable<AddressDto> Get(int page_num = 1, int pageSize = 5)
         {
-            var result = _cruiseContext.Addresses.Include(a=>a.CountryCodeNavigation)
-                .Select(a=>new AddressDto
+            var result = _cruiseContext.Addresses.Include(a => a.CountryCodeNavigation)
+                .OrderBy(a=>a.CountryCode)
+                .Skip((page_num - 1) * pageSize)
+                .Take(pageSize)
+                .Select(a => new AddressDto
                 {
                     AddressId = a.AddressId,
                     AddressStreet = a.AddressStreet,
@@ -37,7 +67,7 @@ namespace CruiseWorld.Controllers
 
         // GET api/<AddressController>/5
         [HttpGet("{AddressId}")]
-        public ActionResult<AddressDto> Get(Guid AddressId)
+        public ActionResult<AddressDto> GetOne(Guid AddressId)
         {
             var result = (from a in _cruiseContext.Addresses
                           where a.AddressId == AddressId
@@ -58,24 +88,6 @@ namespace CruiseWorld.Controllers
             }
 
             return Ok(result);
-        }
-
-        // POST api/<AddressController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<AddressController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<AddressController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }
